@@ -2,7 +2,8 @@
 
 build:
 	docker build -t eilidhmae/openvpn .
-test:
+
+test: build
 	test/run.sh eilidhmae/openvpn
 
 clean:
